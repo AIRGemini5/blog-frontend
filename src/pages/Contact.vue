@@ -34,7 +34,6 @@ export default {
   name: "ContactPage",
   data() {
     return {
-      baseurl: "http://localhost:1337",
       from: {
         name: "",
         email: "",
@@ -47,7 +46,7 @@ export default {
       try {
         await axios({
           method: "POST",
-          url: "http://localhost:1337/contacts",
+          url: GRIDSOME_API_URL+"/contacts",
           data: this.from,
         });
         window.alert("发送成功");
