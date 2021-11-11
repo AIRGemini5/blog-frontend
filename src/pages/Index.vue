@@ -7,7 +7,7 @@
           Hi there, I'm an independent Digital Designer &amp; Art Director
           focused on digital design for brands that like to have fun.
         </h2>
-      </div>
+      </div> 
       <div class="projects">
         <div class="project" v-for="item in $page.indexs.edges" :key="item.node.id">
           <g-link :to="'/projects/' + item.node.id"  class="project-link">
