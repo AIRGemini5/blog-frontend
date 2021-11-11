@@ -23,7 +23,7 @@
             {{ $page.post.content }}
           </p>
           <p class="p-img">
-            <img :src="GRIDSOME_API_URL + $page.post.img.url" />
+            <img :src="$page.post.img.url" />
           </p>
         </div>
       </div>

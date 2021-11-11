@@ -11,7 +11,7 @@
       <div class="projects">
         <div class="project" v-for="item in $page.indexs.edges" :key="item.node.id">
           <g-link :to="'/projects/' + item.node.id"  class="project-link">
-            <img alt="item.node.imgs.title" class="thumbnail" :src="GRIDSOME_API_URL + item.node.imgs.url" />
+            <img alt="item.node.imgs.title" class="thumbnail" :src="item.node.imgs.url" />
             <h3 class="project-title">{{item.node.title}}</h3>
             <div class="categories">
               <span class="category" v-for="citem in item.node.categories" :key="citem.id">{{citem.title}}</span>

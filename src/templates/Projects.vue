@@ -25,7 +25,7 @@
           <p>
             <img
               class="g-image g-image--lazy g-image--loaded"
-              :src="GRIDSOME_API_URL + $page.projects.imgs.url"
+              :src="$page.projects.imgs.url"
             />
           </p>
         </div>
