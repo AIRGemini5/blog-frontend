@@ -191,6 +191,9 @@ export default {
       &:hover {
         background: #f3f3f3;
       }
+      a{
+        text-decoration: none;
+      }
       .journal-title {
         font-size: 1rem;
         line-height: 1.35;

@@ -35,7 +35,7 @@ export default {
   data() {
     return {
       from: {
-        name: "",
+        name:"",
         email: "",
         message: "",
       },
@@ -46,7 +46,7 @@ export default {
       try {
         await axios({
           method: "POST",
-          url: GRIDSOME_API_URL+"/contacts",
+          url: "http://106.75.63.182:1337/contacts",
           data: this.from,
         });
         window.alert("发送成功");
@@ -56,6 +56,7 @@ export default {
           message: "",
         };
       } catch (e) {
+        // console.log(e,${GRIDSOME_API_URL+`/contacts`})
         window.alert("发送失败，请稍后重试");
       }
     },
